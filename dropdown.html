@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdown{
+            display: inline-block;
+        }
+        .dropdown-child{
+            background-color: aqua;
+            position: absolute;
+            display: none;
+        }
+        .dropdown-item{
+            background-color: gray;
+            padding: 10px;
+            color: white;
+        }
+        .dropdown-item:hover{
+            background-color: aquamarine;
+            color: black;
+            cursor: pointer;
+        }
+        .dropdown:hover .dropdown-child{
+            display: block;
+        }
+        .normal{
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <button>Menu</button>
+        <div class="dropdown-child">
+            <div class="dropdown-item">
+                <a href="https://www.google.com" class="normal">Home</a>
+            </div>
+            <div class="dropdown-item">Gallery</div>
+            <div class="dropdown-item">Careers</div>
+            <div class="dropdown-item">Contact</div>
+            <div class="dropdown-item">Services</div>
+        </div>
+    </div>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum delectus doloribus voluptates, eveniet minima rerum debitis quia provident minus tempore! Accusamus nemo nesciunt sequi inventore odio veniam illum maiores vero distinctio doloremque, rerum quidem illo totam quos ipsa eveniet velit. Quisquam repudiandae dolor ipsa eum ut, sed ex similique nam.
+    </p>
+</body>
+</html>

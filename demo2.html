@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 onmouseenter="changeColor()" onmouseleave="resetColor()" id="title">Hello JS</h1>
+    <h1 onclick="update()" id="title2">Hello JS</h1>
+    <script>
+        jsobj1 = document.getElementById("title");
+        jsobj2 = document.getElementById("title2");
+            function changeColor() {
+            jsobj1.textContent = "I am controlled by JavaScript";
+            jsobj1.style.color = "red";
+        }
+        function resetColor(){
+            jsobj1.textContent = "I am Reset";
+            jsobj1.style.color = "black";
+        }
+        function update() {
+            jsobj2.textContent = "I am Touched";
+        }
+    </script>
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            background-color: aqua;
+            width: 400px;
+            height: 400px;
+            position: relative;
+        }
+        .abs{
+            position: absolute;
+            width: 100px;
+            height: 50px;
+            /*left: 40%;
+            top: 40%;
+            right: 40%;
+            bottom: 40%;*/
+            /*left: 150px;
+            top: 150px;*/
+            /*Formula: left: pareny_width/2-own_width/2*/
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: all 0.5s;
+        }
+        .abs:hover{
+            background-color: magenta;
+            transform: rotate(20deg);
+            transition:all 0.5s;
+        }
+        .abs:active{
+            background-color: red;
+            transform: rotate(20deg);
+            transition:all 0.5s;
+        }
+        .abs:focus{
+           background-color: magenta;
+            transform: rotate(20deg);
+            transition:all 0.5s; 
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <button class="abs">I am Relative</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 60%;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            background-color: bisque;
+        }
+        .parent{
+            display: flex;
+            height: 80%;    
+            width: 100%;
+        }
+        .left{
+            border: 2px solid red;
+            flex-grow: 1;
+        }
+        .right{
+            border: 2px solid blue;
+            flex-grow: 1;
+        }
+        .footer-parent{
+            display: flex;
+            justify-content: space-evenly;
+            border: 2px solid chartreuse;
+            flex-grow: 1;
+            align-items: center;
+        }
+        .footer-item{
+            background-color: black;
+            color: white !important;
+            padding: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="parent">
+            <div class="left">
+                <div class="footer-parent">
+                    <div class="footer-item">Item</div>
+                    <div class="footer-item">Item</div>
+                    <div class="footer-item">Item</div>
+                    <div class="footer-item">Item</div>
+                </div>
+                    LEFT
+            </div>
+            <div class="right">RIGHT</div>
+        </div>
+        <div class="footer-parent">
+            <div class="footer-item">Item</div>
+            <div class="footer-item">Item</div>
+            <div class="footer-item">Item</div>
+            <div class="footer-item">Item</div>
+        </div>
+    </div>
+</body>
+</html>

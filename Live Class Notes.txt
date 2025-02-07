@@ -1,0 +1,113 @@
+JavaScript is a broweser scripting language.
+
+Input 
+	Inbuilt Inpult Functions
+		prompt
+		confirm
+	DOM Inputs (HTML Inputs)
+Process
+	Variable, Datatype
+	Conditions
+	Loop
+	Arrays
+	Object (JSON is represents realworld data)
+	Functions
+	Exception Handling
+	File Handling
+Output
+	User
+		alert
+	Devloper
+		console
+	DOM Output(HTML Output)
+
+
+Document Object Model
+---------------------
+HTML = Document
+We need to learn Browser DOM function to Convert the HTML into JS Object
+Using JS obj we can read and write value to HTML Elements
+
+EVENTS & Actions
+----------------
+Click 
+Drag and Drop
+Key Type
+Scroll
+
+Each Event/Action can be Linked to a JS function
+
+
+Node Js is specially developed to enable JS to execute as a stanalone code without browwser dependency.
+
+
+02/02/2025
+
+What is Object in Programming?
+
+	chair - physical entity
+	Object mostly conert Physical entity to Digital Entity
+	
+	{
+		name: "chair",
+		color: "brown",
+		nasBackRest:true,
+		width: 30cm,
+		height:3ft,
+		material:wood
+	}
+	
+	Complex Object
+	--------------
+	
+	Repersent a student data as Object
+	
+	student = {
+		name:"Mahi",
+		regno:"AC345M2",
+		personalDetails:{
+			address:{
+				city:"",
+				street:"",
+				state:"",
+				pincode:""
+			},
+			hobbies:["chess","Badminton","VolleyBall"]
+		},
+		academicDetails:{
+			dept:"",
+			subjects:[
+				{
+					code:"EN102",
+					name:"English"
+				},
+				{
+					code:"M313",
+					name:"Maths"
+				}
+			],
+		}
+	}
+	DOM
+	---
+	
+	Document
+	--------
+	<h1 style = 'color:red;padding:10px' class = 'big bright'>Welcome</h1>
+	
+	Object
+	------
+	
+	{
+		name:"h1",
+		textContent:"Welcome"
+		style:{
+			color:"red"
+			padding:"10px"
+		},
+		classList:["big","bright"]
+	}
+	
+	
+	obj.textContent = "New Content"
+	obj.style.color = 'blue'
